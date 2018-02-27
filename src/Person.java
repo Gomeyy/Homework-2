@@ -1,3 +1,4 @@
+package main;
 public class Person {
 
     // instance variables
@@ -50,4 +51,3 @@ public class Person {
         return s;
     }
 }
-

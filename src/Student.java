@@ -1,12 +1,14 @@
-public class Student extends Person {
+package main;
+
+public class Student extends main.Person {
     //instance variables
-    String stu_id;
-    double gpa;
+    private String stu_id;
+    private double gpa;
 
     //constructors
-    public Student(String n, int a, String s, boolean life, String stu_id, double gpa) {
+    public Student(String n, int a, String s, boolean life, String sID, double gpa) {
         super(n, a, s, life);
-        this.stu_id = stu_id;
+        this.stu_id = sID;
         this.gpa = gpa;
     }
 
@@ -20,9 +22,11 @@ public class Student extends Person {
     public double getGpa() {return gpa;}
     public void setGpa(double gpa) {this.gpa = gpa;}
 
-    //To string
     @Override
     public String toString() {
-        return super.toString() + "\nStudent:" + "\n stu_id = " + stu_id + "\n gpa = " + gpa;
+        String s = super.toString();
+        s += "\tstu_id = " + stu_id;
+        s += "\n\tgpa = " + gpa;
+        return s;
     }
 }
