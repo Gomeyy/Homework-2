@@ -25,13 +25,14 @@ public class College_Student extends main.Student {
     public String getGrade() {return grade;}
     public void setGrade(String grade) {this.grade = grade;}
 
-    //Allow Student to use Getters
+    //Allow Student to use Getters ~ Still have to add department getters
     public String getCourseName(Course c) {
         return c.getCourse_name();
     }
     public College_Student[] getStudents(Course c) {
         return c.getStudents();
     }
+    //toString to override Students
     @Override
     public String toString() {
         String s = super.toString();

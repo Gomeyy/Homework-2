@@ -21,6 +21,7 @@ public class Course {
     public Course() {
     }
 
+    //getters & setters
     public String getCourse_name() {
         return course_name;
     }
@@ -41,7 +42,7 @@ public class Course {
         }
     }
 
-    @Override
+    //toString method
     public String toString() {
         String s = "";
         s += "\n Course: " + course_name;

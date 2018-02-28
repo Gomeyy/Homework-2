@@ -22,6 +22,7 @@ public class Student extends main.Person {
     public double getGpa() {return gpa;}
     public void setGpa(double gpa) {this.gpa = gpa;}
 
+    //toString to override Person
     @Override
     public String toString() {
         String s = super.toString();
