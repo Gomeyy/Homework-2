@@ -25,8 +25,8 @@ public class Student extends main.Person {
     @Override
     public String toString() {
         String s = super.toString();
-        s += "\tstu_id = " + stu_id;
-        s += "\n\tgpa = " + gpa;
+        s += "\tStudent ID = " + stu_id;
+        s += "\n\tGPA = " + gpa;
         return s;
     }
 }
