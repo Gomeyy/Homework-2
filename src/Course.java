@@ -1,4 +1,4 @@
-package Restricted;
+package res;
 import main.College_Student;
 
 public class Course {
@@ -43,8 +43,8 @@ public class Course {
 
     @Override
     public String toString() {
-        String s = "Course:";
-        s += "\n course_name = " + course_name;
+        String s = "";
+        s += "\n Course: " + course_name;
         for (int i = 0; i < students.length; i++) {
             s += "\n Student " + (i + 1) + ":";
             s += students[i].toString();
