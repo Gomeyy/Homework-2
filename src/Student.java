@@ -12,7 +12,10 @@ public class Student extends main.Person {
         this.gpa = gpa;
     }
 
-    public Student() {
+    public Student(Student s) {
+        super(s.getName(), s.getAge(), s.getSSN(), s.getAlive());
+        this.stu_id = s.stu_id;
+        this.gpa = s.gpa;
     }
 
     //getters & setters
