@@ -1,5 +1,5 @@
 package main;
-import Restricted.Course;
+import res.Course;
 
 public class College_Student extends main.Student {
     //instance variables
@@ -35,8 +35,8 @@ public class College_Student extends main.Student {
     @Override
     public String toString() {
         String s = super.toString();
-        s += "\n\tmajor = " + major;
-        s += "\n\tgrade = " + grade;
+        s += "\n\tMajor = " + major;
+        s += "\n\tGrade = " + grade;
         return s;
     }
 }
