@@ -1,16 +1,17 @@
 package res;
 import main.College_Student;
+import res.Professor;
 
 public class Course {
     //instance variables
-    //Professor instructor;
+    Professor instructor;
     private String course_name;
     public College_Student[] students;
 
 
     //constructors
-    public Course(College_Student[] s, String cN) {
-        //this.instructor = p;
+    public Course(College_Student[] s, String cN, Professor p) {
+        this.instructor = p;
         this.course_name = cN;
         this.students = new College_Student[s.length];
         for (int i = 0; i < s.length; i++) {
@@ -18,10 +19,20 @@ public class Course {
         }
     }
 
-    public Course() {
+    public Course(res.Course c) {
+        this.instructor = c.instructor;
+        this.course_name = c.course_name;
+        this.students = c.students;
     }
 
     //getters & setters
+
+    public Professor getInstructor() {
+        return instructor;
+    }
+    public void setInstructor(Professor instructor) {
+        this.instructor = instructor;
+    }
     public String getCourse_name() {
         return course_name;
     }
